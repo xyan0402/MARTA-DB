@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SuspendCard">
+   <children>
+      <TableView fx:id="tableView" layoutX="100.0" layoutY="14.0" prefHeight="200.0" prefWidth="401.0">
+        <columns>
+          <TableColumn fx:id="colCardNum" prefWidth="75.0" text="Card #" />
+          <TableColumn fx:id="colNewOwner" prefWidth="103.0" text="New Owner" />
+            <TableColumn fx:id="colDateSuspended" prefWidth="109.5" text="Date Suspended" />
+            <TableColumn fx:id="colPreviousOwner" prefWidth="112.5" text="Previous Owner" />
+        </columns>
+      </TableView>
+      <Button layoutX="197.0" layoutY="232.0" mnemonicParsing="false" onAction="#newOwner" text="Assign Selected Card to New Owner" />
+      <Button layoutX="187.0" layoutY="273.0" mnemonicParsing="false" onAction="#previousOwner" text="Assign Selected Card to Previous Owner" />
+      <Label layoutX="152.0" layoutY="322.0" text="Assigning the card to an owner will unlock all accounts  " />
+      <Label layoutX="206.0" layoutY="348.0" text="Conflicted on the same Breeze Card" />
+      <Button layoutX="275.0" layoutY="365.0" mnemonicParsing="false" onAction="#refresh" text="Refresh" />
+   </children>
+</AnchorPane>

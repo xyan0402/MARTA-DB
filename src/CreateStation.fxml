@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CreateStation">
+   <children>
+      <Label layoutX="59.0" layoutY="51.0" text="Station Name:" />
+      <Label layoutX="59.0" layoutY="84.0" text="Stop ID:" />
+      <Label layoutX="59.0" layoutY="132.0" text="Entry Fare ($):" />
+      <Label layoutX="61.0" layoutY="166.0" text="Station Type:" />
+      <RadioButton fx:id="BusStationChecked" layoutX="192.0" layoutY="166.0" mnemonicParsing="false" onAction="#BusStationSelected" text="Bus Station" />
+      <RadioButton fx:id="TrainStationChecked" layoutX="192.0" layoutY="231.0" mnemonicParsing="false" onAction="#TrainStationSelected" text="Train Station" />
+      <Label layoutX="211.0" layoutY="183.0" text="Nearest Intersection">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <TextField fx:id="stationName" layoutX="170.0" layoutY="47.0" />
+      <TextField fx:id="StopID" layoutX="170.0" layoutY="89.0" />
+      <TextField fx:id="EntryFare" layoutX="170.0" layoutY="127.0" />
+      <Label layoutX="115.0" layoutY="312.0" text="When checked, passenger can enter the station">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <TextField fx:id="NearestIntersection" editable="false" layoutX="211.0" layoutY="200.0" />
+      <Button fx:id="CreateStation" layoutX="240.0" layoutY="342.0" mnemonicParsing="false" onAction="#CreateStation" text="Create Station" />
+      <RadioButton fx:id="OpenStationChecked" layoutX="94.0" layoutY="282.0" mnemonicParsing="false" onAction="#check" text="Open Station" />
+   </children>
+</AnchorPane>

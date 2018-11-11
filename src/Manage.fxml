@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Manager">
+   <children>
+      <Button fx:id="stationManagement" layoutX="216.0" layoutY="65.0" mnemonicParsing="false" onAction="#manageStationOnAction" prefHeight="25.0" prefWidth="154.0" text="Station Management" />
+      <Button fx:id="suspendedCard" layoutX="216.0" layoutY="127.0" mnemonicParsing="false" onAction="#suspendedCard" prefHeight="25.0" prefWidth="154.0" text="Suspended Card" />
+      <Button layoutX="217.0" layoutY="188.0" mnemonicParsing="false" onAction="#breezecardmag" text="Breeze Card Management" />
+      <Button layoutX="221.0" layoutY="258.0" mnemonicParsing="false" onAction="#passengerFlow" text="Passenger Flow Diagram" />
+      <Button layoutX="265.0" layoutY="318.0" mnemonicParsing="false" onAction="#logout" text="Log Out" />
+   </children>
+</AnchorPane>

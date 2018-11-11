@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ManageStation">
+   <children>
+      <Button fx:id="_createStation" layoutX="53.0" layoutY="314.0" mnemonicParsing="false" onAction="#createStationOnAction" text="Create Station" />
+      <Button fx:id="_viewStation" layoutX="471.0" layoutY="314.0" mnemonicParsing="false" onAction="#viewStationOnAction" text="View Station" />
+      <TableView fx:id="tableView" layoutX="130.0" layoutY="66.0" prefHeight="200.0" prefWidth="341.0">
+        <columns>
+          <TableColumn fx:id="colstationName" prefWidth="102.5" text="Station Name" />
+          <TableColumn fx:id="colstopID" prefWidth="76.5" text="Stop ID" />
+            <TableColumn fx:id="colfare" prefWidth="55.0" text="Fare" />
+            <TableColumn fx:id="colstatus" prefWidth="106.0" text="Status" />
+        </columns>
+      </TableView>
+      <Button fx:id="seeStation" layoutX="53.0" layoutY="34.0" mnemonicParsing="false" onAction="#seeStation" prefHeight="25.0" prefWidth="99.0" text="See The Station" />
+   </children>
+</AnchorPane>
